@@ -1,0 +1,65 @@
+Customer:
+
+
+create table customer
+
+(
+
+customerid int(11) NOT NULL AUTO_INCREMENT, 
+
+ customername varchar(45) NOT NULL, 
+
+email varchar(45) NOT NULL, 
+
+password varchar(45) NOT NULL, 
+
+creditcardno int(11) NOT NULL, 
+
+address varchar(45)NOT NULL,  
+
+PRIMARY KEY (customerid), 
+
+UNIQUE KEY (email) 
+
+);
+
+
+Product:
+
+
+create table product
+
+(
+
+productid int(11) NOT NULL AUTO_INCREMENT, 
+
+productname varchar(45) NOT NULL, 
+
+productamount int(11) NOT NULL, 
+
+PRIMARY KEY (productid) 
+
+);
+
+
+
+Cart:
+
+
+create table cart
+
+(
+
+ cart_no int(11) NOT NULL, 
+
+productid int(11) NOT NULL, 
+
+customerid int(11), 
+
+FOREIGN KEY (customerid) REFERENCES customer(customerid), 
+
+ FOREIGN KEY (productid) REFERENCES product(productid) 
+
+);
+
+     
