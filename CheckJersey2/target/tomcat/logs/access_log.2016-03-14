@@ -1,0 +1,13 @@
+0:0:0:0:0:0:0:1 - - [14/Mar/2016:00:02:53 +0500] "GET /webapi/myresource/ammad/123 HTTP/1.1" 200 31 http-bio-8080-exec-1 171
+0:0:0:0:0:0:0:1 - - [14/Mar/2016:00:03:00 +0500] "GET /webapi/myresource/ammad/123 HTTP/1.1" 200 31 http-bio-8080-exec-3 4
+0:0:0:0:0:0:0:1 - - [14/Mar/2016:00:09:40 +0500] "GET /webapi/myresource/ammad/123 HTTP/1.1" 200 15 http-bio-8080-exec-1 188
+0:0:0:0:0:0:0:1 - - [14/Mar/2016:00:09:45 +0500] "GET /webapi/myresource/ammad/123 HTTP/1.1" 200 15 http-bio-8080-exec-3 4
+0:0:0:0:0:0:0:1 - - [14/Mar/2016:00:10:04 +0500] "GET /webapi/myresource/ammad/124 HTTP/1.1" 200 31 http-bio-8080-exec-4 6
+0:0:0:0:0:0:0:1 - - [14/Mar/2016:00:45:18 +0500] "GET / HTTP/1.1" 200 239 http-bio-8080-exec-1 2064
+0:0:0:0:0:0:0:1 - - [14/Mar/2016:00:45:18 +0500] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8080-exec-3 5
+0:0:0:0:0:0:0:1 - - [14/Mar/2016:00:45:39 +0500] "GET /webapi/myresources/ammad/123 HTTP/1.1" 404 967 http-bio-8080-exec-4 156
+0:0:0:0:0:0:0:1 - - [14/Mar/2016:00:45:48 +0500] "GET /webapi/myresource/ammad/123 HTTP/1.1" 200 15 http-bio-8080-exec-8 75
+0:0:0:0:0:0:0:1 - - [14/Mar/2016:00:45:57 +0500] "GET /webapi/myresource/ammad/121 HTTP/1.1" 200 31 http-bio-8080-exec-9 11
+0:0:0:0:0:0:0:1 - - [14/Mar/2016:00:55:17 +0500] "GET /webapi/myresource/nida/123 HTTP/1.1" 200 30 http-bio-8080-exec-2 7
+0:0:0:0:0:0:0:1 - - [14/Mar/2016:00:57:42 +0500] "GET /webapi/myresource/nida/123 HTTP/1.1" 200 15 http-bio-8080-exec-1 420
+0:0:0:0:0:0:0:1 - - [14/Mar/2016:00:57:42 +0500] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8080-exec-2 7
