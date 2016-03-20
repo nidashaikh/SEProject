@@ -1,5 +1,9 @@
+
 package com.shopping.controller;
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 
 public class DatabaseController {
 
@@ -7,7 +11,8 @@ public class DatabaseController {
 	private static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
 	private static final String DB_URL = "jdbc:mysql://localhost:3306/shopping";
 	static final String USER = "root";
-	static final String PASS = "123456";
+	static final String PASS = "admin";
+	static Connection conn;
 	
 	//override default constructor to prevent object creation
 	private DatabaseController(){}
@@ -27,7 +32,7 @@ public class DatabaseController {
 	public Connection getConnection() {
 		try {
 			Class.forName(JDBC_DRIVER);
-			Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
+			 Connection conn = DriverManager.getConnection(DB_URL, USER, PASS);
 			return conn;
 		} catch (final Exception e) {
 			e.printStackTrace();

@@ -42,7 +42,7 @@ stmt = conn.prepareStatement("create table product("
 			PreparedStatement stmt = null;
 
 			try {
-				conn = databaseController.getConnection();
+				conn = DatabaseController.getConnection();
 				stmt = conn.prepareStatement("update product set productname=?,productamount=? where productid=?");
 				 stmt.setString(1,prod.getProductname());
 				 stmt.setInt(2,prod.getProductamount());
